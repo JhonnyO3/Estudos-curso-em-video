@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>detran</h1>
+    <input type="number" name="" id="vel">
+    <input type="button" value="Verificar" id="botao">
+    <div id="exibe"></div>
+
+
+<style>
+    *{
+        margin: 0;
+        font-family: Verdana;
+
+    }
+    h1{
+        background-color: #034EA2;
+        color: white;
+        padding-left: 20px;
+        
+    }
+    input{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    #botao{
+        border-radius: 3px;
+        background-color: #034EA2;
+        color: white;
+        border-color: #034EA2;
+    }
+    #botao:hover{
+        background-color: #0462ce;
+    }
+    p{
+        padding-left: 20px;
+        margin-top: 5px;
+
+    }
+</style>
+
+<script>
+    // Estrutura de condições simples
+    var botao = document.getElementById('botao')
+    botao.addEventListener('click', verifica)
+
+
+    function verifica() {
+        var vel = document.getElementById('vel')
+        velocidade = Number(vel.value)
+
+        var exibe = document.getElementById('exibe')
+        exibe.innerHTML = `<p>Sua Velocidade é de: ${velocidade}</p>`
+
+        if (velocidade > 80) {
+            exibe.innerHTML += `<p>Você foi <strong>multado</strong>!</p>`
+
+        } 
+
+    }
+</script>
+    
+</body>
+</html>

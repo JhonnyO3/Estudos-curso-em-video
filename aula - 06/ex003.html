@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font: normal 20pt Arial;
+    }
+</style>
+
+<body>
+    <script>
+
+        var nome = window.prompt('Digite seu nome: ')
+        document.write(`Seu nome tem ${nome.length} letras! </br>`) 
+        document.write(`Nome em maiusculo: ${nome.toUpperCase()} </br> `)
+        document.write(`Nome em minusculo: ${nome.toLowerCase()}`)
+
+
+        // O comando .toFixed() faz formatação de quantas casas decimais você desejar
+        //var n1 = 1545.5
+        //n1.toFixed(2)
+        
+        // O comando .replace() Faz a formatação de . para , por exemplo
+        //n1.toFixed(2).replace('.', ',')
+
+        // O comando .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) faz a formação para sistema monetario
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+
+    </script>
+
+</body>
+
+</html>

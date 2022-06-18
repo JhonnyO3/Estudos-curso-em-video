@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 30px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: brown;
+    }
+</style>
+<body>
+    <h1 id="title">Olá, aula sobre DOM!</h1>
+    <p>Resultado aqui</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg">Clique Aqui</div>
+    <script>
+        // Selecionando elementos script
+        var background = window.document.body
+        background.style.background = "fff"
+        // por marca:
+        var paragrafos = window.document.getElementsByTagName('p')[0]
+        paragrafos.style.color = 'blue'
+
+        // por id:
+        var titulo = document.getElementById('title').style.background = 'black'
+
+        //Por seletor:   Mais pratico e mais recente!!!!! para pequenas alterações.
+        var mensagem = document.querySelector('div#msg')
+        mensagem.style.background = "#123"
+
+    </script>
+</body>
+</html>
